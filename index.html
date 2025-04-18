@@ -3,23 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ElectroFind</title>
+  <title>E-Buy</title>
   <meta name="description" content="An e-commerce platform for exploring electronic gadgets." />
-  <meta name="data-site-type" content="ecommerce" />
-  <meta name="data-supported-search" content="natural-language" />
-  <meta name="data-author" content="Padhma Muniraj" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="header" data-role="navigation">
-    <div class="logo" data-type="branding">ElectroFind</div>
-    <div class="search-bar" data-type="search">
-      <input type="text" placeholder="Search products..." aria-label="Search products" />
-    </div>
+  <div class="header">
+    <div class="logo"><a href="/index.html">E-Buy</a></div>
+    <div class="search-bar"> <input type="text" placeholder="Search products..." /> </div>
   </div>
 
-  <div class="product-container" id="product-list"></div>
+  <div class="category-buttons">
+    <a href="category/laptops.html" class="category-btn">All Laptops</a>
+    <a href="category/laptops/gaming.html" class="category-btn">Gaming</a>
+    <a href="category/laptops/business.html" class="category-btn">Business</a>
+    <a href="category/laptops/lightweight.html" class="category-btn">Lightweight</a>
+    <a href="category/laptops/high-performance.html" class="category-btn">High-Performance</a>
+    <a href="category/laptops/gaming/under-1000.html" class="category-btn">Gaming Under $1000</a>
+    <a href="category/laptops/eco-friendly.html" class="category-btn">Eco-Friendly</a>
+  </div>
 
-  <script src="js/products.js"></script>
+
+  <div class="product-container" id="product-list">
+    <!-- Products will be dynamically loaded here -->
+  </div>
+  <div id="pagination" class="pagination"></div>
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>

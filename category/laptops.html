@@ -1,0 +1,44 @@
+<!-- /category/laptops.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="logo"><a href="/index.html">E-Buy</a></div>
+  </div>
+
+  <h1 style="text-align: center;">Browse Laptops</h1>
+  
+  <nav class="breadcrumb">
+    <a href="/index.html">Home</a> &gt;
+    <span>Laptops</span>
+  </nav>
+
+  <div id="product-list"></div>
+
+  <script>
+    fetch('/data/laptops.json')
+      .then(res => res.json())
+      .then(products => {
+        const container = document.getElementById('product-list');
+        container.innerHTML = ''; // Clear any existing content
+
+        products.forEach(product => {
+          const productHTML = `
+            <a href="/pages/products.html?product=${encodeURIComponent(product.name)}" class="product">
+              <h3>${product.name}</h3>
+              <p><strong>Price: </strong>${product.price}</p>
+            </a>
+          `;
+          container.innerHTML += productHTML;
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+  </script>
+</body>
+</html>

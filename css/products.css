@@ -1,0 +1,131 @@
+/* General Styling for the Product Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p, a, span {
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00274C;
+  color: white;
+  padding: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFCB05;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.product {
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  text-align: center;
+  display: block;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the Product Detail Page */
+.product-detail-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.product-image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  width: 100%;  /* Ensure the image takes up the full width of its container */
+  height: auto;
+  max-width: 500px;  /* Adjust the size to fit your layout */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.product-description {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+}
+
+.product-description h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.product-description p {
+  margin: 10px 0;
+}
+
+.metadata p {
+  margin: 5px 0;
+}
+
+.product-description strong {
+  font-weight: bold;
+}
+
+/* Other general product styles */
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo a {
+  color: #FFCB05;
+  text-decoration: none;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin: 20px;
+}
+
+.breadcrumb a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  color: #333;
+}

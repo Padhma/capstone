@@ -1,0 +1,1402 @@
+[
+  {
+    "name": "Asus 15.6\" AMD Ryzen 5 #1",
+    "price": "$1416.45",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "6 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" Intel i5 #2",
+    "price": "$1655.77",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i5",
+      "gpu": "Intel Iris Xe",
+      "battery": "11 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Asus 13.3\" AMD Ryzen 5 #3",
+    "price": "$2625.99",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "11 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "MSI 14\" Apple M1 #4",
+    "price": "$1816.34",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "Apple M1",
+      "gpu": "Apple GPU",
+      "battery": "11 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Dell 15.6\" AMD Ryzen 7 #5",
+    "price": "$1837.54",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "15.6\"",
+      "ram": "8 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Apple GPU",
+      "battery": "10 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Dell 14\" Intel i5 #6",
+    "price": "$2310.12",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i5",
+      "gpu": "AMD Radeon Vega",
+      "battery": "6 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Dell 14\" AMD Ryzen 5 #7",
+    "price": "$2847.31",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "AMD Radeon Vega",
+      "battery": "10 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "HP 16\" AMD Ryzen 5 #8",
+    "price": "$2269.07",
+    "metadata": {
+      "brand": "HP",
+      "screen": "16\"",
+      "ram": "8 GB",
+      "ssd": "2 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "11 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Dell 13.3\" Intel i9 #9",
+    "price": "$2290.01",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i9",
+      "gpu": "Intel Iris Xe",
+      "battery": "13 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "HP 16\" Intel i9 #10",
+    "price": "$2906.19",
+    "metadata": {
+      "brand": "HP",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i9",
+      "gpu": "Intel UHD",
+      "battery": "11 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "MSI 16\" AMD Ryzen 7 #11",
+    "price": "$1125.8",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "8 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" Apple M1 #12",
+    "price": "$1445.23",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "8 GB",
+      "ssd": "2 TB",
+      "cpu": "Apple M1",
+      "gpu": "Apple GPU",
+      "battery": "10 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Apple 13.3\" Intel i9 #13",
+    "price": "$1296.8",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i9",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "10 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Dell 16\" Intel i9 #14",
+    "price": "$2803.4",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "16\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i9",
+      "gpu": "Intel Iris Xe",
+      "battery": "10 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "MSI 15.6\" AMD Ryzen 7 #15",
+    "price": "$1066.62",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "15.6\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Intel UHD",
+      "battery": "6 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Lenovo 16\" AMD Ryzen 7 #16",
+    "price": "$2421.84",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "16\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "AMD Radeon Vega",
+      "battery": "11 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" AMD Ryzen 7 #17",
+    "price": "$2517.39",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Intel UHD",
+      "battery": "13 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Lenovo 15.6\" Intel i9 #18",
+    "price": "$1869.19",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i9",
+      "gpu": "AMD Radeon Vega",
+      "battery": "6 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Lenovo 15.6\" Intel i7 #19",
+    "price": "$2476.0",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "15.6\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i7",
+      "gpu": "Intel UHD",
+      "battery": "11 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Apple 14\" Apple M1 #20",
+    "price": "$1754.25",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "Apple M1",
+      "gpu": "NVIDIA MX250",
+      "battery": "6 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "MSI 14\" AMD Ryzen 5 #21",
+    "price": "$1367.11",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "14\"",
+      "ram": "8 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "NVIDIA MX250",
+      "battery": "8 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "HP 15.6\" Intel i9 #22",
+    "price": "$2579.37",
+    "metadata": {
+      "brand": "HP",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i9",
+      "gpu": "Intel UHD",
+      "battery": "10 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "MSI 14\" Intel i9 #23",
+    "price": "$1274.32",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "14\"",
+      "ram": "8 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i9",
+      "gpu": "Intel Iris Xe",
+      "battery": "13 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Acer 16\" AMD Ryzen 5 #24",
+    "price": "$1577.34",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "16\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "Apple GPU",
+      "battery": "13 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Lenovo 15.6\" Intel i7 #25",
+    "price": "$2593.74",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "15.6\"",
+      "ram": "32 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i7",
+      "gpu": "Intel UHD",
+      "battery": "6 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "Asus 16\" AMD Ryzen 7 #26",
+    "price": "$2186.02",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "16\"",
+      "ram": "16 GB",
+      "ssd": "256 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Intel Iris Xe",
+      "battery": "13 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Apple 15.6\" Apple M1 #27",
+    "price": "$2248.18",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "15.6\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "Apple M1",
+      "gpu": "Intel Iris Xe",
+      "battery": "10 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Acer 13.3\" Intel i7 #28",
+    "price": "$2741.17",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "13.3\"",
+      "ram": "8 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i7",
+      "gpu": "Intel UHD",
+      "battery": "11 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Asus 16\" AMD Ryzen 7 #29",
+    "price": "$2919.0",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Apple GPU",
+      "battery": "6 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "HP 14\" Intel i7 #30",
+    "price": "$1485.46",
+    "metadata": {
+      "brand": "HP",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i7",
+      "gpu": "NVIDIA MX250",
+      "battery": "6 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "MSI 16\" AMD Ryzen 7 #31",
+    "price": "$1763.37",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Intel UHD",
+      "battery": "10 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" Intel i9 #32",
+    "price": "$1202.66",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i9",
+      "gpu": "AMD Radeon Vega",
+      "battery": "6 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Asus 13.3\" AMD Ryzen 5 #33",
+    "price": "$1446.19",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "Intel UHD",
+      "battery": "10 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "MSI 15.6\" Intel i5 #34",
+    "price": "$2736.0",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "15.6\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i5",
+      "gpu": "AMD Radeon Vega",
+      "battery": "8 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "Lenovo 13.3\" Intel i5 #35",
+    "price": "$2360.39",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i5",
+      "gpu": "AMD Radeon Vega",
+      "battery": "10 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" Intel i7 #36",
+    "price": "$2476.87",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i7",
+      "gpu": "Intel Iris Xe",
+      "battery": "8 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" Intel i5 #37",
+    "price": "$2108.1",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "8 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i5",
+      "gpu": "Intel UHD",
+      "battery": "10 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "HP 15.6\" Intel i5 #38",
+    "price": "$1736.57",
+    "metadata": {
+      "brand": "HP",
+      "screen": "15.6\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i5",
+      "gpu": "AMD Radeon Vega",
+      "battery": "6 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Acer 15.6\" Apple M1 #39",
+    "price": "$2840.78",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "Apple M1",
+      "gpu": "Intel Iris Xe",
+      "battery": "10 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "MSI 14\" Apple M1 #40",
+    "price": "$2269.13",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "14\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "Apple M1",
+      "gpu": "Intel Iris Xe",
+      "battery": "8 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" Intel i7 #41",
+    "price": "$2161.13",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i7",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "6 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Lenovo 16\" Intel i7 #42",
+    "price": "$1287.55",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "16\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i7",
+      "gpu": "Apple GPU",
+      "battery": "13 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Lenovo 16\" Intel i7 #43",
+    "price": "$1396.16",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "16\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i7",
+      "gpu": "AMD Radeon Vega",
+      "battery": "13 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "MSI 13.3\" Apple M1 #44",
+    "price": "$1087.06",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "Apple M1",
+      "gpu": "Intel Iris Xe",
+      "battery": "13 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "HP 13.3\" Intel i7 #45",
+    "price": "$1369.48",
+    "metadata": {
+      "brand": "HP",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i7",
+      "gpu": "NVIDIA MX250",
+      "battery": "11 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Apple 13.3\" AMD Ryzen 7 #46",
+    "price": "$1197.04",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "AMD Radeon Vega",
+      "battery": "6 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "MSI 14\" AMD Ryzen 5 #47",
+    "price": "$2127.53",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "14\"",
+      "ram": "8 GB",
+      "ssd": "2 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "AMD Radeon Vega",
+      "battery": "8 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Asus 13.3\" Apple M1 #48",
+    "price": "$1441.18",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "13.3\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "Apple M1",
+      "gpu": "AMD Radeon Vega",
+      "battery": "11 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "MSI 15.6\" AMD Ryzen 7 #49",
+    "price": "$1785.07",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "15.6\"",
+      "ram": "8 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Intel Iris Xe",
+      "battery": "13 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "MSI 16\" Intel i5 #50",
+    "price": "$1829.26",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "16\"",
+      "ram": "8 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i5",
+      "gpu": "Apple GPU",
+      "battery": "13 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" AMD Ryzen 7 #51",
+    "price": "$1493.09",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Apple GPU",
+      "battery": "10 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Asus 13.3\" AMD Ryzen 7 #52",
+    "price": "$1571.39",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Intel UHD",
+      "battery": "10 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Acer 16\" Intel i7 #53",
+    "price": "$2843.12",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i7",
+      "gpu": "Intel UHD",
+      "battery": "11 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "HP 13.3\" AMD Ryzen 7 #54",
+    "price": "$1206.3",
+    "metadata": {
+      "brand": "HP",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Intel UHD",
+      "battery": "11 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Asus 13.3\" Intel i5 #55",
+    "price": "$1820.78",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i5",
+      "gpu": "Intel Iris Xe",
+      "battery": "11 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "Apple 15.6\" AMD Ryzen 5 #56",
+    "price": "$2593.12",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "15.6\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "10 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "Apple 16\" Intel i5 #57",
+    "price": "$2669.81",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "16\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i5",
+      "gpu": "AMD Radeon Vega",
+      "battery": "13 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "Acer 13.3\" AMD Ryzen 7 #58",
+    "price": "$2582.76",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "13.3\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "AMD Radeon Vega",
+      "battery": "13 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Dell 14\" Intel i9 #59",
+    "price": "$1241.73",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i9",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "6 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "MSI 15.6\" AMD Ryzen 7 #60",
+    "price": "$2038.35",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "NVIDIA MX250",
+      "battery": "6 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Asus 13.3\" Intel i9 #61",
+    "price": "$2055.9",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "13.3\"",
+      "ram": "8 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i9",
+      "gpu": "AMD Radeon Vega",
+      "battery": "13 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Lenovo 15.6\" Intel i7 #62",
+    "price": "$1322.91",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "15.6\"",
+      "ram": "8 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i7",
+      "gpu": "Apple GPU",
+      "battery": "11 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "Apple 16\" Apple M1 #63",
+    "price": "$1253.78",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "16\"",
+      "ram": "8 GB",
+      "ssd": "256 GB",
+      "cpu": "Apple M1",
+      "gpu": "Intel Iris Xe",
+      "battery": "8 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "MSI 14\" AMD Ryzen 7 #64",
+    "price": "$1498.17",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "NVIDIA MX250",
+      "battery": "11 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Apple 16\" AMD Ryzen 5 #65",
+    "price": "$1825.3",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "AMD Radeon Vega",
+      "battery": "6 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Dell 16\" Intel i9 #66",
+    "price": "$2666.5",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i9",
+      "gpu": "Intel UHD",
+      "battery": "10 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Lenovo 13.3\" AMD Ryzen 7 #67",
+    "price": "$1979.62",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Intel Iris Xe",
+      "battery": "13 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Lenovo 15.6\" Intel i5 #68",
+    "price": "$1951.4",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i5",
+      "gpu": "Intel Iris Xe",
+      "battery": "10 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Lenovo 13.3\" Intel i7 #69",
+    "price": "$2810.4",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i7",
+      "gpu": "NVIDIA MX250",
+      "battery": "8 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Asus 14\" AMD Ryzen 5 #70",
+    "price": "$1747.42",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "256 GB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "Intel UHD",
+      "battery": "6 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "MSI 16\" Intel i9 #71",
+    "price": "$2738.53",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "16\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i9",
+      "gpu": "Intel UHD",
+      "battery": "10 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Lenovo 13.3\" AMD Ryzen 7 #72",
+    "price": "$2073.76",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "NVIDIA MX250",
+      "battery": "10 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "HP 15.6\" AMD Ryzen 7 #73",
+    "price": "$1751.71",
+    "metadata": {
+      "brand": "HP",
+      "screen": "15.6\"",
+      "ram": "32 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "Apple GPU",
+      "battery": "10 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Acer 15.6\" AMD Ryzen 5 #74",
+    "price": "$2148.36",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "256 GB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "Intel Iris Xe",
+      "battery": "10 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Apple 15.6\" Intel i5 #75",
+    "price": "$2817.77",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "15.6\"",
+      "ram": "32 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i5",
+      "gpu": "Intel Iris Xe",
+      "battery": "11 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Acer 13.3\" Intel i9 #76",
+    "price": "$2412.45",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "13.3\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i9",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "13 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "Lenovo 14\" AMD Ryzen 7 #77",
+    "price": "$1654.53",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "NVIDIA MX250",
+      "battery": "10 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Apple 14\" Intel i9 #78",
+    "price": "$1561.39",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "14\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i9",
+      "gpu": "AMD Radeon Vega",
+      "battery": "11 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Apple 16\" Intel i9 #79",
+    "price": "$2025.5",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i9",
+      "gpu": "Intel UHD",
+      "battery": "11 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Dell 16\" AMD Ryzen 5 #80",
+    "price": "$2517.36",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "16\"",
+      "ram": "8 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "Intel UHD",
+      "battery": "13 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Asus 13.3\" Intel i9 #81",
+    "price": "$1052.39",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "13.3\"",
+      "ram": "8 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i9",
+      "gpu": "NVIDIA MX250",
+      "battery": "10 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Asus 15.6\" Intel i9 #82",
+    "price": "$2465.42",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "15.6\"",
+      "ram": "32 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i9",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "13 hrs",
+      "weight": "2.0 kg"
+    }
+  },
+  {
+    "name": "Dell 16\" Intel i9 #83",
+    "price": "$2005.79",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "16\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "Intel i9",
+      "gpu": "NVIDIA MX250",
+      "battery": "13 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "MSI 13.3\" Intel i9 #84",
+    "price": "$1940.3",
+    "metadata": {
+      "brand": "MSI",
+      "screen": "13.3\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i9",
+      "gpu": "Apple GPU",
+      "battery": "13 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Asus 14\" Apple M1 #85",
+    "price": "$2671.38",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "Apple M1",
+      "gpu": "NVIDIA MX250",
+      "battery": "11 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Apple 14\" AMD Ryzen 7 #86",
+    "price": "$1988.47",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "AMD Radeon Vega",
+      "battery": "11 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Dell 16\" AMD Ryzen 7 #87",
+    "price": "$1450.56",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "16\"",
+      "ram": "8 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "AMD Radeon Vega",
+      "battery": "10 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Dell 13.3\" AMD Ryzen 7 #88",
+    "price": "$1307.12",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "1 TB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "AMD Radeon Vega",
+      "battery": "11 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Dell 14\" Intel i9 #89",
+    "price": "$1500.71",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i9",
+      "gpu": "AMD Radeon Vega",
+      "battery": "10 hrs",
+      "weight": "1.5 kg"
+    }
+  },
+  {
+    "name": "Lenovo 13.3\" Apple M1 #90",
+    "price": "$1696.65",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "13.3\"",
+      "ram": "8 GB",
+      "ssd": "256 GB",
+      "cpu": "Apple M1",
+      "gpu": "NVIDIA GTX 1650",
+      "battery": "13 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "Apple 15.6\" Apple M1 #91",
+    "price": "$2428.47",
+    "metadata": {
+      "brand": "Apple",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "2 TB",
+      "cpu": "Apple M1",
+      "gpu": "Intel UHD",
+      "battery": "13 hrs",
+      "weight": "1.2 kg"
+    }
+  },
+  {
+    "name": "Asus 16\" Intel i9 #92",
+    "price": "$2923.8",
+    "metadata": {
+      "brand": "Asus",
+      "screen": "16\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i9",
+      "gpu": "NVIDIA MX250",
+      "battery": "6 hrs",
+      "weight": "2.5 kg"
+    }
+  },
+  {
+    "name": "Dell 13.3\" AMD Ryzen 5 #93",
+    "price": "$2946.58",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "NVIDIA MX250",
+      "battery": "10 hrs",
+      "weight": "1.1 kg"
+    }
+  },
+  {
+    "name": "HP 15.6\" Intel i9 #94",
+    "price": "$2272.71",
+    "metadata": {
+      "brand": "HP",
+      "screen": "15.6\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "Intel i9",
+      "gpu": "AMD Radeon Vega",
+      "battery": "6 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "HP 13.3\" Intel i9 #95",
+    "price": "$2727.8",
+    "metadata": {
+      "brand": "HP",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "1 TB",
+      "cpu": "Intel i9",
+      "gpu": "Intel Iris Xe",
+      "battery": "10 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" Apple M1 #96",
+    "price": "$1451.02",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "16 GB",
+      "ssd": "256 GB",
+      "cpu": "Apple M1",
+      "gpu": "Intel Iris Xe",
+      "battery": "10 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Acer 13.3\" Apple M1 #97",
+    "price": "$1084.96",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "13.3\"",
+      "ram": "32 GB",
+      "ssd": "1 TB",
+      "cpu": "Apple M1",
+      "gpu": "NVIDIA MX250",
+      "battery": "6 hrs",
+      "weight": "1.4 kg"
+    }
+  },
+  {
+    "name": "Dell 13.3\" AMD Ryzen 7 #98",
+    "price": "$2520.73",
+    "metadata": {
+      "brand": "Dell",
+      "screen": "13.3\"",
+      "ram": "16 GB",
+      "ssd": "512 GB",
+      "cpu": "AMD Ryzen 7",
+      "gpu": "AMD Radeon Vega",
+      "battery": "11 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Lenovo 16\" Intel i7 #99",
+    "price": "$1519.13",
+    "metadata": {
+      "brand": "Lenovo",
+      "screen": "16\"",
+      "ram": "8 GB",
+      "ssd": "256 GB",
+      "cpu": "Intel i7",
+      "gpu": "Intel Iris Xe",
+      "battery": "11 hrs",
+      "weight": "1.3 kg"
+    }
+  },
+  {
+    "name": "Acer 14\" AMD Ryzen 5 #100",
+    "price": "$2227.64",
+    "metadata": {
+      "brand": "Acer",
+      "screen": "14\"",
+      "ram": "32 GB",
+      "ssd": "2 TB",
+      "cpu": "AMD Ryzen 5",
+      "gpu": "Apple GPU",
+      "battery": "13 hrs",
+      "weight": "2.0 kg"
+    }
+  }
+]
