@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const productName = urlParams.get('product');
 
 if (productName) {
-  fetch('../data/laptops.json')  // Correct path to JSON
+  fetch('../data/laptops.json')
     .then(response => response.json())
     .then(products => {
       const product = products.find(p => p.name === productName);
