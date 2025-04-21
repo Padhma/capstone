@@ -5,28 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-Buy</title>
   <meta name="description" content="An e-commerce platform for exploring electronic gadgets." />
+  <meta name="data-llm-structure" content="true" />
+  <meta name="llm-site-purpose" content="Help users find laptops suited to their needs. Categories include Gaming, Business, Lightweight, High-Performance, etc." />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="logo"><a href="./index.html">E-Buy</a></div>
-    <div class="search-bar"> <input type="text" placeholder="Search products..." /> </div>
+  <div class="header" role="banner" aria-label="Site Header">
+    <div class="logo">
+      <a href="./index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
+    </div>
+    <div class="search-bar" role="search">
+      <input type="text" placeholder="Search products..." aria-label="Search products" />
+    </div>
   </div>
 
-  <div class="category-buttons">
-    <a href="./category/laptops.html" class="category-btn">All Laptops</a>
-    <a href="./category/laptops/gaming.html" class="category-btn">Gaming</a>
-    <a href="./category/laptops/business.html" class="category-btn">Business</a>
-    <a href="./category/laptops/lightweight.html" class="category-btn">Lightweight</a>
-    <a href="./category/laptops/high-performance.html" class="category-btn">High-Performance</a>
-    <a href="./category/laptops/gaming/under-1500.html" class="category-btn">Gaming Under $1000</a>
-    <a href="./category/laptops/eco-friendly.html" class="category-btn">Eco-Friendly</a>
+  <div class="category-buttons" role="navigation" aria-label="Product Categories">
+    <a href="./category/laptops.html" class="category-btn" role="link" aria-label="All Laptops" data-category="laptops" data-use-case="all">All Laptops</a>
+    <a href="./category/laptops/gaming.html" class="category-btn" role="link" aria-label="Gaming Laptops" data-category="gaming" data-use-case="gaming">Gaming</a>
+    <a href="./category/laptops/business.html" class="category-btn" role="link" aria-label="Business Laptops" data-category="business" data-use-case="office">Business</a>
+    <a href="./category/laptops/lightweight.html" class="category-btn" role="link" aria-label="Lightweight Laptops" data-category="lightweight" data-use-case="portable">Lightweight</a>
+    <a href="./category/laptops/high-performance.html" class="category-btn" role="link" aria-label="High-Performance Laptops" data-category="high-performance" data-use-case="performance">High-Performance</a>
+    <a href="./category/laptops/gaming/under-1500.html" class="category-btn" role="link" aria-label="Gaming Laptops Under $1000" data-category="gaming" data-price-range="under-1000" data-use-case="gaming">Gaming Under $1000</a>
+    <a href="./category/laptops/eco-friendly.html" class="category-btn" role="link" aria-label="Eco-Friendly Laptops" data-category="eco-friendly" data-use-case="sustainable">Eco-Friendly</a>
   </div>
 
-  <div class="product-container" id="product-list">
+  <div class="product-container" id="product-list" role="region" aria-label="Product Listings">
     <!-- Products will be dynamically loaded here -->
   </div>
-  <div id="pagination" class="pagination"></div>
+  <div id="pagination" class="pagination" role="navigation" aria-label="Pagination Controls"></div>
 
   <script src="./js/script.js"></script>
 </body>
