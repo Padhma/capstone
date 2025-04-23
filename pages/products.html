@@ -4,24 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Details</title>
+  <meta name="description" content="Detailed view of a selected product on E-Buy." />
+  <meta name="data-llm-structure" content="true" />
+  <meta name="llm-page-purpose" content="Show detailed specifications and image of a selected laptop." />
   <link rel="stylesheet" href="../css/products.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="logo"><a href="../index.html">E-Buy</a></div>
+  <div class="header" role="banner" aria-label="Site Header">
+    <div class="logo">
+      <a href="../index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
+    </div>
   </div>
 
-  <nav class="breadcrumb">
-    <a href="../index.html">Home</a> &gt;
-    <a href="../category/laptops.html">Laptops</a>
+  <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+    <a href="../index.html" role="link" aria-label="Home">Home</a> &gt;
+    <a href="../category/laptops.html" role="link" aria-label="Laptops Category">Laptops</a>
   </nav>
 
-  <div class="product-detail-container">
+  <div class="product-detail-container" role="region" aria-label="Product Details">
     <div class="product-image">
       <img id="product-img" src="../assets/images/laptop.jpg" alt="Product Image" />
     </div>
     <div class="product-description">
-      <h3 id="product-name"></h3>
+      <h3 id="product-name" role="heading" aria-level="2"></h3>
       <p><strong>Price: </strong><span id="product-price"></span></p>
       <div class="metadata">
         <p><strong>Brand: </strong><span id="product-brand"></span></p>
