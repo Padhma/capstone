@@ -1,4 +1,11 @@
-llm-agent/venv/
-.env
+# macOS
 .DS_Store
-__pycache__
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+llm-agent/venv/
