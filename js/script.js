@@ -22,7 +22,7 @@ function renderPage(page) {
   paginatedProducts.forEach(product => {
     const productHTML = `
       <a href="pages/products.html?product=${encodeURIComponent(product.name)}" class="product">
-        <img src="assets/images/laptop.jpg" alt="Product Image" />
+        <img src="../assets/images/laptop.jpg" alt="Product Image" />
         <h3>${product.name}</h3>
         <p><strong>Price: </strong>${product.price}</p>
       </a>
