@@ -1,9 +1,12 @@
+import time
+import json
 from agent.agent import run_agent
 from scraper.page_loader import close_driver
 from search_algorithms.dfs import DepthFirstSearch
 from search_algorithms.bfs import BreadthFirstSearch
 from search_algorithms.astar import AStarSearch
 
+# sample simulation data
 # task = "find a high performance laptop"
 # goal = {"brand": "acer"}
 # query_id = "Q9"
@@ -12,15 +15,10 @@ from search_algorithms.astar import AStarSearch
 # search_engine = BreadthFirstSearch
 # search_engine = AStarSearch
 
+# Load queries from agent_queries.json
+with open('complex_queries.json', 'r') as f:
+    queries = json.load(f)
 
-queries = [
-    {
-        "query_id": "Q1",
-        "task": "Find a Business laptop",
-        "goal": {"brand": "dell"},
-        "query_complexity": 2
-    },
-]
 max_search_steps = 20
 algorithms =[DepthFirstSearch, BreadthFirstSearch, AStarSearch]
 
@@ -34,6 +32,7 @@ for query in queries:
             query_complexity=query["query_complexity"],
             engine_class=search_engine
         )
+    time.sleep(30)
 
 if result and result.get("success"):
     # print(f"\n🎯 Goal Details: {result}")

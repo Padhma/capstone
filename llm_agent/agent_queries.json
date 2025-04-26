@@ -1,0 +1,603 @@
+[
+    {
+        "query_id": "Q1",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Dell"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q2",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA GTX 1650"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q3",
+        "task": "Find a laptop",
+        "goal": {"brand": "MSI", "ram": "16 GB"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q4",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA GTX 1650", "price": "under 1500$"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q5",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Dell", "ram": "16 GB"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q6",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "Intel i9"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q7",
+        "task": "Find a Lightweight laptop",
+        "goal": {"brand": "Acer", "weight": "1.1 kg", "battery": "11 hrs"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q8",
+        "task": "Find a Gaming laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q9",
+        "task": "Find a laptop",
+        "goal": {"brand": "MSI", "ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q10",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "Apple M1", "ram": "32 GB"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q11",
+        "task": "Find a Business laptop",
+        "goal": {"battery": "11 hrs"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q12",
+        "task": "Find a Lightweight laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q13",
+        "task": "Find a laptop",
+        "goal": {"brand": "Lenovo", "screen": "13.3\"", "cpu": "Intel i7", "ram": "16 GB", "price": "under 2000$"},
+        "query_complexity": 5
+    },
+    {
+        "query_id": "Q14",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA GTX 1650"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q15",
+        "task": "Find a Business laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q16",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "AMD Ryzen 7", "ram": "32 GB"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q17",
+        "task": "Find a Lightweight laptop",
+        "goal": {"weight": "1.1 kg"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q18",
+        "task": "Find a laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q19",
+        "task": "Find a Business laptop",
+        "goal": {"battery": "11 hrs", "weight": "1.2 kg"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q20",
+        "task": "Find a Gaming laptop",
+        "goal": {"brand": "MSI", "price": "under 1500$"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q21",
+        "task": "Find a High-performance laptop",
+        "goal": {"ram": "32 GB"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q22",
+        "task": "Find a Lightweight laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q23",
+        "task": "Find a laptop",
+        "goal": {"brand": "HP"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q24",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA GTX 1650", "price": "under 2000$"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q25",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Dell", "weight": "1.4 kg", "battery": "10 hrs"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q26",
+        "task": "Find a Lightweight laptop",
+        "goal": {"weight": "1.2 kg"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q27",
+        "task": "Find a laptop",
+        "goal": {"screen": "14\"", "cpu": "Intel i7"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q28",
+        "task": "Find a Gaming laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q29",
+        "task": "Find a Business laptop",
+        "goal": {"price": "under 2000$"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q30",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "Apple M1", "ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q31",
+        "task": "Find a Lightweight laptop",
+        "goal": {"brand": "Asus"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q32",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA MX250"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q33",
+        "task": "Find a laptop",
+        "goal": {"battery": "13 hrs"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q34",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "HP"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q35",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA GTX 1650", "price": "under 2000$"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q36",
+        "task": "Find a Lightweight laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q37",
+        "task": "Find a laptop",
+        "goal": {"cpu": "Intel i7"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q38",
+        "task": "Find a High-performance laptop",
+        "goal": {"ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q39",
+        "task": "Find a Gaming laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q40",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Dell", "ram": "16 GB", "battery": "11 hrs"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q41",
+        "task": "Find a laptop",
+        "goal": {"gpu": "Intel Iris Xe"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q42",
+        "task": "Find a High-performance laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q43",
+        "task": "Find a Gaming laptop",
+        "goal": {"ram": "16 GB", "gpu": "NVIDIA MX250"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q44",
+        "task": "Find a Business laptop",
+        "goal": {"battery": "13 hrs"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q45",
+        "task": "Find a Lightweight laptop",
+        "goal": {"brand": "Apple", "weight": "1.2 kg", "price": "under 2500$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q46",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "AMD Ryzen 7"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q47",
+        "task": "Find a Gaming laptop",
+        "goal": {"brand": "MSI", "gpu": "NVIDIA GTX 1650", "price": "under 1500$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q48",
+        "task": "Find a Lightweight laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q49",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Acer", "battery": "10 hrs"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q50",
+        "task": "Find a High-performance laptop",
+        "goal": {"ram": "32 GB"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q51",
+        "task": "Find a Gaming laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q52",
+        "task": "Find a Lightweight laptop",
+        "goal": {"weight": "1.1 kg", "battery": "11 hrs", "price": "under 2000$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q53",
+        "task": "Find a Business laptop",
+        "goal": {"screen": "14\"", "battery": "10 hrs"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q54",
+        "task": "Find a High-performance laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q55",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA GTX 1650", "cpu": "Intel i9", "ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 5
+    },
+    {
+        "query_id": "Q56",
+        "task": "Find a Lightweight laptop",
+        "goal": {"battery": "13 hrs"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q57",
+        "task": "Find a laptop",
+        "goal": {"brand": "HP", "ram": "16 GB"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q58",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Lenovo", "weight": "1.2 kg", "price": "under 2000$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q59",
+        "task": "Find a Gaming laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q60",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "HP"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q61",
+        "task": "Find a Lightweight laptop",
+        "goal": {"weight": "1.1 kg", "battery": "11 hrs"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q62",
+        "task": "Find a High-performance laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q63",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA MX250", "price": "under 2000$"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q64",
+        "task": "Find a Business laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q65",
+        "task": "Find a Lightweight laptop",
+        "goal": {"brand": "MSI", "weight": "1.2 kg", "battery": "10 hrs"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q66",
+        "task": "Find a laptop",
+        "goal": {"brand": "Lenovo", "screen": "14\""},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q67",
+        "task": "Find a Gaming laptop",
+        "goal": {"price": "under 1500$"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q68",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Asus", "ram": "32 GB"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q69",
+        "task": "Find a Lightweight laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q70",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "Intel i9", "ram": "32 GB"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q71",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA GTX 1650", "ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q72",
+        "task": "Find a Business laptop",
+        "goal": {"battery": "11 hrs"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q73",
+        "task": "Find a Lightweight laptop",
+        "goal": {"brand": "Apple", "battery": "13 hrs"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q74",
+        "task": "Find a laptop",
+        "goal": {"screen": "13.3\"", "cpu": "Intel i7"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q75",
+        "task": "Find a Gaming laptop",
+        "goal": {"price": "under 2000$"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q76",
+        "task": "Find a High-performance laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q77",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Acer", "battery": "10 hrs", "price": "under 2000$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q78",
+        "task": "Find a Lightweight laptop",
+        "goal": {"weight": "1.1 kg"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q79",
+        "task": "Find a High-performance laptop",
+        "goal": {"brand": "Dell", "ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q80",
+        "task": "Find a Gaming laptop",
+        "goal": {"brand": "MSI"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q81",
+        "task": "Find a Business laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q82",
+        "task": "Find a Lightweight laptop",
+        "goal": {"battery": "13 hrs", "price": "under 1500$"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q83",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "Apple M1", "ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 5
+    },
+    {
+        "query_id": "Q84",
+        "task": "Find a Gaming laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q85",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "Lenovo"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q86",
+        "task": "Find a Lightweight laptop",
+        "goal": {"weight": "1.2 kg"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q87",
+        "task": "Find a laptop",
+        "goal": {"ram": "32 GB", "battery": "11 hrs"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q88",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "Intel i9", "ram": "32 GB", "price": "under 3000$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q89",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA GTX 1650"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q90",
+        "task": "Find a Business laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q91",
+        "task": "Find a Lightweight laptop",
+        "goal": {"battery": "13 hrs"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q92",
+        "task": "Find a laptop",
+        "goal": {"screen": "14\"", "cpu": "Intel i7"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q93",
+        "task": "Find a High-performance laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q94",
+        "task": "Find a Gaming laptop",
+        "goal": {"price": "under 1500$"},
+        "query_complexity": 2
+    },
+    {
+        "query_id": "Q95",
+        "task": "Find a Business laptop",
+        "goal": {"brand": "HP", "battery": "10 hrs"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q96",
+        "task": "Find a Lightweight laptop",
+        "goal": {"brand": "Acer", "weight": "1.1 kg", "price": "under 2000$"},
+        "query_complexity": 4
+    },
+    {
+        "query_id": "Q97",
+        "task": "Find a High-performance laptop",
+        "goal": {"cpu": "Apple M1", "ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 5
+    },
+    {
+        "query_id": "Q98",
+        "task": "Find a Gaming laptop",
+        "goal": {"gpu": "NVIDIA MX250", "ram": "16 GB"},
+        "query_complexity": 3
+    },
+    {
+        "query_id": "Q99",
+        "task": "Find a laptop",
+        "goal": {},
+        "query_complexity": 1
+    },
+    {
+        "query_id": "Q100",
+        "task": "Find a Business laptop",
+        "goal": {"ram": "32 GB", "price": "under 2500$"},
+        "query_complexity": 3
+    }
+]
+
