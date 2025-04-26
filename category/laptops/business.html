@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Business Laptops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Laptops - E-Buy</title>
+  <meta name="description" content="Find lightweight and long-battery business laptops on E-Buy." />
+  <meta name="data-llm-structure" content="true" />
+  <meta name="llm-page-purpose" content="Show laptops suited for business use with good battery life and portability." />
   <link rel="stylesheet" href="../../css/style.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="logo"><a href="../../index.html">E-Buy</a></div>
+
+  <div class="header" role="banner" aria-label="Site Header">
+    <div class="logo">
+      <a href="../../index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
+    </div>
   </div>
 
   <h1 style="text-align: center;">Business Laptops</h1>
 
-  <nav class="breadcrumb">
-    <a href="../../index.html">Home</a> &gt;
-    <a href="../laptops.html">Laptops</a> &gt;
-    <span>Business</span>
+  <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+    <a href="../../index.html" role="link" aria-label="Home">Home</a> &gt;
+    <a href="../laptops.html" role="link" aria-label="Laptops Category">Laptops</a> &gt;
+    <span aria-current="page">Business</span>
   </nav>
 
-  <div id="product-list"></div>
+  <div id="product-list" role="region" aria-label="Product Listings" style="padding: 20px;"></div>
 
   <script>
     fetch('../../data/laptops.json')
@@ -29,19 +35,23 @@
         container.innerHTML = '';
 
         const filtered = products.filter(p =>
-          (p.metadata.weight && parseFloat(p.metadata.weight) <= 1.5) &&
-          (p.metadata.battery && parseInt(p.metadata.battery) >= 8)
+          p.metadata.weight && parseFloat(p.metadata.weight) <= 1.5 &&
+          p.metadata.battery && parseInt(p.metadata.battery) >= 8
         );
 
-        filtered.forEach(product => {
-          const productHTML = `
-            <a href="../../pages/products.html?product=${encodeURIComponent(product.name)}" class="product">
-              <h3>${product.name}</h3>
-              <p><strong>Price: </strong>${product.price}</p>
-            </a>
-          `;
-          container.innerHTML += productHTML;
-        });
+        if (filtered.length === 0) {
+          container.innerHTML = '<p style="text-align:center;">No business laptops matching the criteria.</p>';
+        } else {
+          filtered.forEach(product => {
+            const productHTML = `
+              <a href="../../pages/products.html?product=${encodeURIComponent(product.name)}" class="product" role="link" aria-label="View details for ${product.name}">
+                <h3>${product.name}</h3>
+                <p><strong>Price: </strong>${product.price}</p>
+              </a>
+            `;
+            container.innerHTML += productHTML;
+          });
+        }
       })
       .catch(err => console.error('Error loading business laptops:', err));
   </script>

@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaming Laptops Under $1500</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming Laptops Under $1500 - E-Buy</title>
+  <meta name="description" content="Browse gaming laptops priced under $1500 on E-Buy." />
+  <meta name="data-llm-structure" content="true" />
+  <meta name="llm-page-purpose" content="Show gaming laptops with NVIDIA GPUs under $1500 price range." />
   <link rel="stylesheet" href="../../../css/style.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="logo"><a href="../../../index.html">E-Buy</a></div>
+  <div class="header" role="banner" aria-label="Site Header">
+    <div class="logo">
+      <a href="../../../index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
+    </div>
   </div>
 
   <h1 style="text-align: center;">Gaming Laptops Under $1500</h1>
 
-  <nav class="breadcrumb">
-    <a href="../../../index.html">Home</a> &gt;
-    <a href="../../laptops.html">Laptops</a> &gt;
-    <a href="../gaming.html">Gaming</a> &gt;
-    <span>Under $1500</span>
+  <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+    <a href="../../../index.html" role="link" aria-label="Home">Home</a> &gt;
+    <a href="../../laptops.html" role="link" aria-label="Laptops Category">Laptops</a> &gt;
+    <a href="../gaming.html" role="link" aria-label="Gaming Laptops">Gaming</a> &gt;
+    <span aria-current="page">Under $1500</span>
   </nav>
 
-  <div id="product-list"></div>
+  <div id="product-list" role="region" aria-label="Product Listings" style="padding: 20px;"></div>
+
   <script>
     fetch('../../../data/laptops.json')
       .then(res => res.json())
@@ -29,19 +35,23 @@
         container.innerHTML = '';
 
         const filtered = products.filter(p =>
-          p.metadata.gpu.includes('NVIDIA') &&
+          p.metadata.gpu && p.metadata.gpu.includes('NVIDIA') &&
           parseFloat(p.price.replace('$', '').replace(',', '')) < 1500
         );
 
-        filtered.forEach(product => {
-          const productHTML = `
-            <a href="../../../pages/products.html?product=${encodeURIComponent(product.name)}" class="product">
-              <h3>${product.name}</h3>
-              <p><strong>Price: </strong>${product.price}</p>
-            </a>
-          `;
-          container.innerHTML += productHTML;
-        });
+        if (filtered.length === 0) {
+          container.innerHTML = '<p style="text-align:center;">No gaming laptops found under $1500.</p>';
+        } else {
+          filtered.forEach(product => {
+            const productHTML = `
+              <a href="../../../pages/products.html?product=${encodeURIComponent(product.name)}" class="product" role="link" aria-label="View details for ${product.name}">
+                <h3>${product.name}</h3>
+                <p><strong>Price: </strong>${product.price}</p>
+              </a>
+            `;
+            container.innerHTML += productHTML;
+          });
+        }
       })
       .catch(error => console.error('Error loading JSON:', error));
   </script>

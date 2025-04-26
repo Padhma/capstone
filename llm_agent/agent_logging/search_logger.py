@@ -15,11 +15,11 @@ class SearchLogger:
 
     def fieldnames(self):
         return [
-            "run_id", "algorithm", "query_id", "query_complexity", "start_state",
+            "run_id", "algorithm", "query_id", "query_complexity",
             "success", "execution_time_ms", "nodes_expanded", "path_length"
         ]
 
-    def log_run(self, algorithm, query_id, query_complexity, start_state, result, node_count, path_length):
+    def log_run(self, algorithm, query_id, query_complexity, result, node_count, path_length):
         with open(self.filepath, mode="a", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=self.fieldnames())
             writer.writerow({

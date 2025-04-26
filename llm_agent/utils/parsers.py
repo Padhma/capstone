@@ -1,30 +1,20 @@
 import re
 
 def parse_llm_action_list(response, elements):
-    """
-    Parses Gemini's markdown-style or plain action lines.
-    Matches: ... → https://some-url
-    """
-    matches = re.findall(r'→\s*(https?://\S+)', response)
+    # Assuming that URLs wrapped in open or close link characters were causing issues
+    matches = re.findall(r'→\s*(https?://[^\s]*)', response)
     selected = []
-    # print(f"Matches found: {matches}")
 
     for href in matches:
+        href = href.rstrip('**').strip()  # Remove potential formatting artifacts
         for el in elements:
-            if el.get("tag") == "a" and el.get("href") == href.strip():
+            if el.get("tag") == "a" and el.get("href") == href:
                 selected.append(el)
-                # print(f"Selected element: {el}")
                 break
+    
+    # Diagnostic output to verify actions
+    print("Valid actions extracted from LLM response:")
+    for action in selected:
+        print(action.get("text", ""), "→", action.get("href", ""))
 
     return selected
-
-
-def parse_price(text):
-    match = re.search(r"\$([\d,]+\.?\d*)", text)
-    if match:
-        return float(match.group(1).replace(",", ""))
-    return None
-
-def parse_ram(text):
-    match = re.search(r"(\d+)\s*gb", text.lower())
-    return int(match.group(1)) if match else None

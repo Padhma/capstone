@@ -1,11 +1,4 @@
 run_id,algorithm,query_id,query_complexity,start_state,success,execution_time_ms,nodes_expanded,path_length
-1,DFS,Q1,1,True,14631,2,2
-1,DFS,Q2,2,False,1554,1,0
-1,DFS,Q3,2,False,78070,10,9
-1,DFS,Q4,2,False,76195,10,9
-1,DFS,Q5,2,False,1445,1,0
-1,DFS,Q5,2,False,1756,1,0
-1,DFS,Q5,2,False,77444,10,9
-1,DFS,Q5,2,False,1613,1,0
-1,DFS,Q5,2,False,74941,10,9
-1,DFS,Q5,2,True,12831,2,2
+1,DepthFirstSearch,Q1,2,True,31937,2,2
+1,BreadthFirstSearch,Q1,2,True,27838,2,2
+1,AStarSearch,Q1,2,True,32563,2,2

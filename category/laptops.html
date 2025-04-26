@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laptops</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browse Laptops - E-Buy</title>
+  <meta name="description" content="Explore all available laptops on E-Buy, including gaming, business, lightweight, and more." />
+  <meta name="data-llm-structure" content="true" />
+  <meta name="llm-page-purpose" content="Display the full list of laptops available for browsing and selection." />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="logo"><a href="../index.html">E-Buy</a></div>
+
+  <div class="header" role="banner" aria-label="Site Header">
+    <div class="logo">
+      <a href="../index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
+    </div>
   </div>
 
   <h1 style="text-align: center;">Browse Laptops</h1>
   
-  <nav class="breadcrumb">
-    <a href="../index.html">Home</a> &gt;
-    <span>Laptops</span>
+  <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+    <a href="../index.html" role="link" aria-label="Home">Home</a> &gt;
+    <span aria-current="page">Laptops</span>
   </nav>
 
-  <div id="product-list"></div>
+  <div id="product-list" role="region" aria-label="Product Listings" style="padding: 20px;"></div>
 
   <script>
     fetch('../data/laptops.json')
       .then(res => res.json())
       .then(products => {
         const container = document.getElementById('product-list');
-        container.innerHTML = ''; // Clear any existing content
+        container.innerHTML = '';
 
-        products.forEach(product => {
-          const productHTML = `
-            <a href="../pages/products.html?product=${encodeURIComponent(product.name)}" class="product">
-              <h3>${product.name}</h3>
-              <p><strong>Price: </strong>${product.price}</p>
-            </a>
-          `;
-          container.innerHTML += productHTML;
-        });
+        if (products.length === 0) {
+          container.innerHTML = '<p style="text-align:center;">No laptops available at the moment.</p>';
+        } else {
+          products.forEach(product => {
+            const productHTML = `
+              <a href="../pages/products.html?product=${encodeURIComponent(product.name)}" class="product" role="link" aria-label="View details for ${product.name}">
+                <h3>${product.name}</h3>
+                <p><strong>Price: </strong>${product.price}</p>
+              </a>
+            `;
+            container.innerHTML += productHTML;
+          });
+        }
       })
-      .catch(error => console.error('Error loading JSON:', error));
+      .catch(error => console.error('Error loading laptops:', error));
   </script>
+
 </body>
 </html>

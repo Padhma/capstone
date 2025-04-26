@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>High-Performance Laptops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High-Performance Laptops - E-Buy</title>
+  <meta name="description" content="Browse top-tier high-performance laptops on E-Buy, featuring powerful CPUs and large RAM." />
+  <meta name="data-llm-structure" content="true" />
+  <meta name="llm-page-purpose" content="Display laptops with high-end CPUs and large memory for professional or gaming use." />
   <link rel="stylesheet" href="../../css/style.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="logo"><a href="../../index.html">E-Buy</a></div>
+
+  <div class="header" role="banner" aria-label="Site Header">
+    <div class="logo">
+      <a href="../../index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
+    </div>
   </div>
 
   <h1 style="text-align: center;">High-Performance Laptops</h1>
 
-  <nav class="breadcrumb">
-    <a href="../../index.html">Home</a> &gt;
-    <a href="../laptops.html">Laptops</a> &gt;
-    <span>High-Performance</span>
+  <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+    <a href="../../index.html" role="link" aria-label="Home">Home</a> &gt;
+    <a href="../laptops.html" role="link" aria-label="Laptops Category">Laptops</a> &gt;
+    <span aria-current="page">High-Performance</span>
   </nav>
 
-  <div id="product-list"></div>
+  <div id="product-list" role="region" aria-label="Product Listings" style="padding: 20px;"></div>
+
   <script>
     fetch('../../data/laptops.json')
       .then(res => res.json())
@@ -28,21 +35,26 @@
         container.innerHTML = '';
 
         const filtered = products.filter(p =>
-          ['Intel i9', 'AMD Ryzen 7', 'Apple M1'].includes(p.metadata.cpu) ||
-          ['32 GB'].includes(p.metadata.ram)
+          (p.metadata.cpu && ['Intel i9', 'AMD Ryzen 7', 'Apple M1'].includes(p.metadata.cpu)) ||
+          (p.metadata.ram && p.metadata.ram.includes('32'))
         );
 
-        filtered.forEach(product => {
-          const productHTML = `
-            <a href="../../pages/products.html?product=${encodeURIComponent(product.name)}" class="product">
-              <h3>${product.name}</h3>
-              <p><strong>Price: </strong>${product.price}</p>
-            </a>
-          `;
-          container.innerHTML += productHTML;
-        });
+        if (filtered.length === 0) {
+          container.innerHTML = '<p style="text-align:center;">No high-performance laptops found.</p>';
+        } else {
+          filtered.forEach(product => {
+            const productHTML = `
+              <a href="../../pages/products.html?product=${encodeURIComponent(product.name)}" class="product" role="link" aria-label="View details for ${product.name}">
+                <h3>${product.name}</h3>
+                <p><strong>Price: </strong>${product.price}</p>
+              </a>
+            `;
+            container.innerHTML += productHTML;
+          });
+        }
       })
       .catch(err => console.error('Error loading high-performance laptops:', err));
   </script>
+
 </body>
 </html>

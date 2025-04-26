@@ -1,11 +1,10 @@
 import time
-import datetime
 from search_algorithms.node import SearchNode
 from utils.goal_checker import goal_checker
 from utils.parsers import parse_llm_action_list
 from search_algorithms.expand import expand_frontier
 
-class DFSTreeSearchEngine:
+class DepthFirstSearch:
   def __init__(self, page_loader, invoke_llm, formatter, expander, task, goal_constraints,
                  max_steps=10, logger=None, algorithm=None, query_id=None, query_complexity=None):
         self.page_loader = page_loader
@@ -124,17 +123,20 @@ class DFSTreeSearchEngine:
     steps = 0
     while self.frontier and steps < self.max_steps:
         node = self.step()
-        # Ensure immediate check right after a step completes
+
         if self.result.get("success"):
             print(f"🎉 Success criteria met. Ending search after {steps} steps.")
             break
-        if node is None:
+
+        if node is None and not self.frontier:
+            print(f"⚠️ Frontier exhausted - terminating search.")
             break
+
         steps += 1
     
     print("Final path taken:")
     for step in (self.result.get("path") or []):
-        print("→", step)  # Ensure consistency with structured actions
+        print("→", step)
     print(f"Search ended after {steps} steps.")
 
     execution_time = int((time.time() - self.start_time) * 1000)
@@ -147,7 +149,6 @@ class DFSTreeSearchEngine:
         algorithm=self.algorithm,
         query_id=self.query_id,
         query_complexity=self.query_complexity,
-        start_state=self.start_state,
         result=self.result,
         node_count=len(self.explored),
         path_length=self.result.get("path_length", 0)

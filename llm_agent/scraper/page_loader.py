@@ -3,7 +3,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 # Setup headless driver
 options = Options()
@@ -18,18 +17,18 @@ def page_loader(path):
     driver.get(path)
 
     # 💡 Refresh in case dynamic rendering lags on first load
-    if "products.html" in path:
+    if "products.html" in path or "gaming.html" in path or "under-1500.html" in path:
         driver.refresh()
-        print("🔄 Refreshed product page to force metadata load.")
+        print("🔄 Refreshed page to force metadata load.")
 
-        try:
-            # 💡 This waits specifically for product RAM field to be populated
-            WebDriverWait(driver, 5).until(
-                lambda d: d.find_element(By.ID, "product-ram").text.strip() != ""
-            )
-            print("✅ Product metadata loaded.")
-        except Exception as e:
-            print("⚠️ Warning: Product metadata not loaded in time.", e)
+    try:
+        # Wait for dynamic content to load; adjust for your specific conditions
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#product-list a.product h3"))
+        )
+        print("✅ Product metadata loaded.")
+    except Exception as e:
+        print("⚠️ Warning: Product metadata not loaded in time.", e)
 
     driver.implicitly_wait(3)
     elements = driver.find_elements(By.XPATH, "//*")
