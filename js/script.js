@@ -2,7 +2,7 @@ let currentPage = 1;
 const productsPerPage = 12;
 let allProducts = [];
 
-fetch('data/laptops.json')
+fetch('../data/laptops.json')
   .then(response => response.json())
   .then(products => {
     allProducts = products;
