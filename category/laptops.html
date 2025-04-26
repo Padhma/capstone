@@ -26,30 +26,8 @@
 
   <div class="product-container" id="product-list" role="region" aria-label="Product Listings"></div>
   <div id="pagination" class="pagination" role="navigation" aria-label="Pagination Controls"></div>
-  <script>
-    fetch('../data/laptops.json')
-      .then(res => res.json())
-      .then(products => {
-        const container = document.getElementById('product-list');
-        container.innerHTML = '';
 
-        if (products.length === 0) {
-          container.innerHTML = '<p style="text-align:center;">No laptops available at the moment.</p>';
-        } else {
-          products.forEach(product => {
-            const productHTML = `
-              <a href="../pages/products.html?product=${encodeURIComponent(product.name)}" class="product" role="link" aria-label="View details for ${product.name}">
-                <img src="../assets/images/laptop.jpg" alt="Product Image" />
-                <h3>${product.name}</h3>
-                <p><strong>Price: </strong>${product.price}</p>
-              </a>
-            `;
-            container.innerHTML += productHTML;
-          });
-        }
-      })
-      .catch(error => console.error('Error loading laptops:', error));
-  </script>
+  <script src="../js/script.js"></script>
   
 
 </body>
