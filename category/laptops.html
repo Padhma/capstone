@@ -25,7 +25,7 @@
   </nav>
 
   <div class="product-container" id="product-list" role="region" aria-label="Product Listings"></div>
-
+  <div id="pagination" class="pagination" role="navigation" aria-label="Pagination Controls"></div>
   <script>
     fetch('../data/laptops.json')
       .then(res => res.json())
@@ -50,6 +50,7 @@
       })
       .catch(error => console.error('Error loading laptops:', error));
   </script>
+  
 
 </body>
 </html>
