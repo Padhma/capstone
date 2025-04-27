@@ -3,30 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-Buy</title>
-  <meta name="description" content="An e-commerce platform for exploring electronic gadgets." />
+  <title>Browse Laptops - E-Buy</title>
+  <meta name="description" content="Explore all available laptops on E-Buy, including gaming, business, lightweight, and more." />
   <meta name="data-llm-structure" content="true" />
-  <meta name="llm-site-purpose" content="Help users find laptops suited to their needs. Categories include Gaming, Business, Lightweight, High-Performance, etc." />
-  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="llm-page-purpose" content="Display the full list of laptops available for browsing and selection." />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
   <div class="header" role="banner" aria-label="Site Header">
     <div class="logo">
-      <a href="./index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
+      <a href="../index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
     </div>
   </div>
 
-  <h1 style="text-align: center; margin-top: 30px;">Find Your Perfect Laptop</h1>
+  <h1 style="text-align: center;">Browse Laptops</h1>
+  
+  <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+    <a href="../index.html" role="link" aria-label="Home">Home</a> &gt;
+    <span aria-current="page">Laptops</span>
+  </nav>
 
-  <div class="category-container" role="navigation" aria-label="Product Categories" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px;">
-    <a href="./category/laptops.html" class="category-card" role="link" aria-label="All Laptops">All Laptops</a>
-    <a href="./category/laptops/gaming.html" class="category-card" role="link" aria-label="Gaming Laptops">Gaming</a>
-    <a href="./category/laptops/business.html" class="category-card" role="link" aria-label="Business Laptops">Business</a>
-    <a href="./category/laptops/lightweight.html" class="category-card" role="link" aria-label="Lightweight Laptops">Lightweight</a>
-    <a href="./category/laptops/high-performance.html" class="category-card" role="link" aria-label="High-Performance Laptops">High-Performance</a>
-    <a href="./category/laptops/eco-friendly.html" class="category-card" role="link" aria-label="Eco-Friendly Laptops">Eco-Friendly</a>
-  </div>
+  <div class="product-container" id="product-list" role="region" aria-label="Product Listings"></div>
+  <div id="pagination" class="pagination" role="navigation" aria-label="Pagination Controls"></div>
+
+  <script src="../js/script.js"></script>
 
 </body>
 </html>

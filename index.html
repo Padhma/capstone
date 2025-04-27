@@ -10,29 +10,28 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
+
   <div class="header" role="banner" aria-label="Site Header">
     <div class="logo">
       <a href="./index.html" role="link" aria-label="E-Buy Home">E-Buy</a>
     </div>
-    <!-- <div class="search-bar" role="search">
-      <input type="text" placeholder="Search products..." aria-label="Search products" />
-    </div> -->
   </div>
 
-  <div class="category-buttons" role="navigation" aria-label="Product Categories">
-    <a href="./category/laptops.html" class="category-btn" role="link" aria-label="All Laptops" data-category="laptops" data-use-case="all">All Laptops</a>
-    <a href="./category/laptops/gaming.html" class="category-btn" role="link" aria-label="Gaming Laptops" data-category="gaming" data-use-case="gaming">Gaming</a>
-    <a href="./category/laptops/business.html" class="category-btn" role="link" aria-label="Business Laptops" data-category="business" data-use-case="office">Business</a>
-    <a href="./category/laptops/lightweight.html" class="category-btn" role="link" aria-label="Lightweight Laptops" data-category="lightweight" data-use-case="portable">Lightweight</a>
-    <a href="./category/laptops/high-performance.html" class="category-btn" role="link" aria-label="High-Performance Laptops" data-category="high-performance" data-use-case="performance">High-Performance</a>
-    <a href="./category/laptops/eco-friendly.html" class="category-btn" role="link" aria-label="Eco-Friendly Laptops" data-category="eco-friendly" data-use-case="sustainable">Eco-Friendly</a>
+  <div class="hero-section">
+    <h1>Find Your Perfect Laptop</h1>
+    <p>Your one-stop shop for gaming, business, and more.</p> <!-- optional text -->
   </div>
 
-  <div class="product-container" id="product-list" role="region" aria-label="Product Listings">
-    <!-- Products will be dynamically loaded here -->
+  <div class="category-grid" role="navigation" aria-label="Product Categories">
+    <a href="./category/laptops.html" class="category-card" role="link" aria-label="All Laptops">All Laptops</a>
+    <a href="./category/laptops/gaming.html" class="category-card" role="link" aria-label="Gaming Laptops">Gaming</a>
+    <a href="./category/laptops/business.html" class="category-card" role="link" aria-label="Business Laptops">Business</a>
+    <a href="./category/laptops/student.html" class="category-card" role="link" aria-label="Student Laptops">Student Picks</a>
+    <a href="./category/laptops/lightweight.html" class="category-card" role="link" aria-label="Lightweight Laptops">Lightweight</a>
+    <a href="./category/laptops/high-performance.html" class="category-card" role="link" aria-label="High-Performance Laptops">High-Performance</a>
+    <a href="./category/laptops/eco-friendly.html" class="category-card" role="link" aria-label="Eco-Friendly Laptops">Eco-Friendly</a>
+    <a href="./category/laptops/2-in-1.html" class="category-card" role="link" aria-label="2 in 1 laptops">2-in-1 Convertibles</a>
   </div>
-  <div id="pagination" class="pagination" role="navigation" aria-label="Pagination Controls"></div>
 
-  <script src="./js/script.js"></script>
 </body>
 </html>

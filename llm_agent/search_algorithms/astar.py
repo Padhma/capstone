@@ -47,18 +47,61 @@ class AStarSearch:
         self.start_time = time.time()
         self.navigation_path = [start_url]
 
-    def heuristic(self, current_node):
-        # Use a summary of the page elements for concise LLM input
-        summary = " | ".join([el.get("text", "") for el in current_node.state_content[:10]])
-        prompt = f"Considering the task '{self.task}', rate how likely this page leads to the right laptop from 1 to 10. Context: {summary}"
+    # def heuristic(self, current_node):
+    #     # Focus on elements that align with constraints for a more pointed summary
+    #     feature_summary = []
+    #     for el in current_node.state_content[:10]:
+    #         text = el.get("text", "").lower()
+    #         if any(keyword in text for keyword in ['brand', 'ram', 'cpu', 'price']):
+    #             feature_summary.append(text)
 
+    #     summarized_features = " | ".join(feature_summary)
+
+    #     # Refined prompt targeting goal achievement likelihood
+    #     prompt = (f"Given the task '{self.task}', how promising is this page as a step to achieving the goal? "
+    #             f"Constraints include {self.goal_constraints}. Rate 1 (not promising) to 10 (very promising): Context: {summarized_features}")
+
+    #     response = self.invoke_llm(prompt)
+
+    #     try:
+    #         score = int(response.strip())
+    #         score = max(1, min(score, 10))
+    #     except ValueError:
+    #         score = 5  # Default wisely if no valid score is returned
+    #     return score
+
+    def heuristic(self, current_node):
+        # Extract important features (focus on matching goal-related keywords)
+        important_features = []
+        keywords = ["hp", "gaming", "under", "$", "ram", "cpu", "price"]
+
+        for el in current_node.state_content:
+            text = el.get("text", "").lower()
+            if any(keyword in text for keyword in keywords):
+                important_features.append(text)
+
+        # Summarize features (limit to first 10 relevant ones)
+        summarized_features = " | ".join(important_features[:10]) if important_features else "No important features found."
+
+        # Create a structured and task-focused prompt
+        prompt = (
+            f"TASK: {self.task}\n"
+            f"GOAL CONSTRAINTS: {self.goal_constraints}\n"
+            f"PAGE CONTEXT: {summarized_features}\n\n"
+            f"QUESTION:\n"
+            f"Based on the goal and this page, how likely is it that proceeding from this page will complete the task?\n"
+            f"Respond only with an integer from 1 (very unlikely) to 10 (very likely)."
+        )
+
+        # Call LLM to get heuristic score
         response = self.invoke_llm(prompt)
-        
+
         try:
             score = int(response.strip())
-            score = max(1, min(score, 10))
+            score = max(1, min(score, 10))  # Clamp to [1, 10]
         except ValueError:
-            score = 5  # Default wisely if no valid score is returned
+            score = 5  # Safe default
+
         return score
 
     def step(self):

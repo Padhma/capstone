@@ -59,3 +59,8 @@ run_id,algorithm,query_id,query_complexity,success,execution_time_ms,nodes_expan
 1,DepthFirstSearch,H20,5,False,40196,4,0
 1,BreadthFirstSearch,H20,5,False,35010,4,0
 1,AStarSearch,H20,5,False,35108,4,0
+1,DepthFirstSearch,H21,5,False,13370,2,0
+1,BreadthFirstSearch,H21,5,False,10758,2,0
+1,AStarSearch,H21,5,False,11163,2,0
+
+1,DepthFirstSearch,H21,3,False,12992,2,0

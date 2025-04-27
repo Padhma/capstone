@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>High-Performance Laptops - E-Buy</title>
-  <meta name="description" content="Browse top-tier high-performance laptops on E-Buy, featuring powerful CPUs and large RAM." />
+  <title>Student Laptops - E-Buy</title>
+  <meta name="description" content="Discover laptops ideal for students — long battery life, affordable, and reliable — on E-Buy." />
   <meta name="data-llm-structure" content="true" />
-  <meta name="llm-page-purpose" content="Display laptops with high-end CPUs and large memory for professional or gaming use." />
+  <meta name="llm-page-purpose" content="Show laptops suitable for students with good battery life and affordable pricing." />
   <link rel="stylesheet" href="../../css/style.css" />
 </head>
 <body>
@@ -17,12 +17,12 @@
     </div>
   </div>
 
-  <h1 style="text-align: center;">High-Performance Laptops</h1>
+  <h1 style="text-align:center;">Student Laptops</h1>
 
   <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
     <a href="../../index.html" role="link" aria-label="Home">Home</a> &gt;
     <a href="../laptops.html" role="link" aria-label="Laptops Category">Laptops</a> &gt;
-    <span aria-current="page">High-Performance</span>
+    <span aria-current="page">Student</span>
   </nav>
 
   <div class="product-container" id="product-list" role="region" aria-label="Product Listings"></div>
@@ -34,15 +34,17 @@
         const container = document.getElementById('product-list');
         container.innerHTML = '';
 
-        const filtered = products.filter(p =>
-          (p.metadata.cpu && ['Intel i9', 'AMD Ryzen 7', 'Apple M1'].includes(p.metadata.cpu)) ||
-          (p.metadata.ram && p.metadata.ram.includes('32'))
-        );
+        const studentLaptops = products.filter(p => {
+          const price = parseFloat(p.price.replace('$', '').replace(',', ''));
+          const batteryHours = p.metadata.battery ? parseInt(p.metadata.battery) : 0;
 
-        if (filtered.length === 0) {
-          container.innerHTML = '<p style="text-align:center;">No high-performance laptops found.</p>';
+          return price <= 2000 && batteryHours >= 10;
+        });
+
+        if (studentLaptops.length === 0) {
+          container.innerHTML = '<p>No student laptops available at the moment.</p>';
         } else {
-          filtered.forEach(product => {
+          studentLaptops.forEach(product => {
             const productHTML = `
               <a href="../../pages/products.html?product=${encodeURIComponent(product.name)}" class="product" role="link" aria-label="View details for ${product.name}">
                 <img src="../../assets/images/laptop.jpg" alt="Product Image" />
@@ -54,7 +56,7 @@
           });
         }
       })
-      .catch(err => console.error('Error loading high-performance laptops:', err));
+      .catch(error => console.error('Error loading student laptops:', error));
   </script>
 
 </body>

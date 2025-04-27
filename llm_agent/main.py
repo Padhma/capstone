@@ -15,9 +15,21 @@ from search_algorithms.astar import AStarSearch
 # search_engine = BreadthFirstSearch
 # search_engine = AStarSearch
 
-# Load queries from agent_queries.json
-with open('complex_queries.json', 'r') as f:
-    queries = json.load(f)
+
+queries = [
+    {
+    "query_id": "H21",
+    "task": "Find a 2-in-1 Laptop",
+    "goal": {
+        "screen": "between 13\" and 14\""
+    },
+    "query_complexity": 3
+    }
+]
+
+# # Load queries from agent_queries.json
+# with open('complex_queries.json', 'r') as f:
+#     queries = json.load(f)
 
 max_search_steps = 20
 algorithms =[DepthFirstSearch, BreadthFirstSearch, AStarSearch]

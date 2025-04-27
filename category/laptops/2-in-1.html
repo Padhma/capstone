@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>High-Performance Laptops - E-Buy</title>
-  <meta name="description" content="Browse top-tier high-performance laptops on E-Buy, featuring powerful CPUs and large RAM." />
+  <title>2-in-1 Convertibles - E-Buy</title>
+  <meta name="description" content="Discover versatile 2-in-1 convertible laptops on E-Buy — perfect for work, school, and entertainment." />
   <meta name="data-llm-structure" content="true" />
-  <meta name="llm-page-purpose" content="Display laptops with high-end CPUs and large memory for professional or gaming use." />
+  <meta name="llm-page-purpose" content="Show laptops that can function as both laptops and tablets, ideal for versatility." />
   <link rel="stylesheet" href="../../css/style.css" />
 </head>
 <body>
@@ -17,12 +17,12 @@
     </div>
   </div>
 
-  <h1 style="text-align: center;">High-Performance Laptops</h1>
+  <h1 style="text-align:center;">2-in-1 Convertibles</h1>
 
   <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
     <a href="../../index.html" role="link" aria-label="Home">Home</a> &gt;
     <a href="../laptops.html" role="link" aria-label="Laptops Category">Laptops</a> &gt;
-    <span aria-current="page">High-Performance</span>
+    <span aria-current="page">2-in-1</span>
   </nav>
 
   <div class="product-container" id="product-list" role="region" aria-label="Product Listings"></div>
@@ -34,15 +34,15 @@
         const container = document.getElementById('product-list');
         container.innerHTML = '';
 
-        const filtered = products.filter(p =>
-          (p.metadata.cpu && ['Intel i9', 'AMD Ryzen 7', 'Apple M1'].includes(p.metadata.cpu)) ||
-          (p.metadata.ram && p.metadata.ram.includes('32'))
-        );
+        const twoInOne = products.filter(p => {
+          const screenSize = p.metadata.screen ? parseFloat(p.metadata.screen) : 0;
+          return screenSize > 13 && screenSize <= 14; // typical size for 2-in-1 convertibles
+        });
 
-        if (filtered.length === 0) {
-          container.innerHTML = '<p style="text-align:center;">No high-performance laptops found.</p>';
+        if (twoInOne.length === 0) {
+          container.innerHTML = '<p>No 2-in-1 laptops available at the moment.</p>';
         } else {
-          filtered.forEach(product => {
+          twoInOne.forEach(product => {
             const productHTML = `
               <a href="../../pages/products.html?product=${encodeURIComponent(product.name)}" class="product" role="link" aria-label="View details for ${product.name}">
                 <img src="../../assets/images/laptop.jpg" alt="Product Image" />
@@ -54,7 +54,7 @@
           });
         }
       })
-      .catch(err => console.error('Error loading high-performance laptops:', err));
+      .catch(error => console.error('Error loading 2-in-1 laptops:', error));
   </script>
 
 </body>
