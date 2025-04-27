@@ -598,6 +598,86 @@
         "task": "Find a Business laptop",
         "goal": {"ram": "32 GB", "price": "under 2500$"},
         "query_complexity": 3
-    }
+    },
+    {"query_id": "H1", "task": "Find a Business laptop", "goal": {"brand": "Dell", "ram": "32 GB", "battery": "above 8 hrs"}, "query_complexity": 4},
+    {"query_id": "H2", "task": "Find a Gaming laptop", "goal": {"gpu": "GTX 1650", "ram": "16 GB", "price": "under $1200"}, "query_complexity": 4},
+    {"query_id": "H3", "task": "Find a Laptop", "goal": {"brand": "MSI", "cpu": "Intel i7", "ssd": "1 TB", "weight": "under 1.5 kg"}, "query_complexity": 4},
+    {"query_id": "H4", "task": "Find a Laptop", "goal": {"brand": "Asus", "cpu": "AMD Ryzen 7", "ssd": "512 GB", "battery": "over 6 hrs"}, "query_complexity": 4},
+    {"query_id": "H5", "task": "Find a Laptop", "goal": {"screen": "14\"", "gpu": "GTX 1650", "weight": "under 1.3 kg"}, "query_complexity": 4},
+    {"query_id": "H6", "task": "Find a Laptop", "goal": {"use_case": "gaming and business", "price": "under $1500"}, "query_complexity": 5},
+    {"query_id": "H7", "task": "Find a Business laptop", "goal": {"brand": "HP", "ram": "32 GB", "battery": "over 10 hrs"}, "query_complexity": 4},
+    {"query_id": "H8", "task": "Find a Laptop", "goal": {"gpu": "NVIDIA", "cpu": "AMD Ryzen", "ssd": "over 512 GB"}, "query_complexity": 4},
+    {"query_id": "H9", "task": "Find a Laptop", "goal": {"cpu": "Intel i5", "ram": "16 GB", "weight": "under 1.2 kg"}, "query_complexity": 4},
+    {"query_id": "H10", "task": "Find a Gaming laptop", "goal": {"battery": "over 6 hrs", "screen": "at least 15\""}, "query_complexity": 4},
+    {"query_id": "H11", "task": "Find a Laptop", "goal": {"brand": ["Dell", "MSI"], "ssd": "1 TB", "gpu": "GTX series"}, "query_complexity": 5},
+    {"query_id": "H12", "task": "Find a Laptop", "goal": {"features": "touch screen", "ssd": "512 GB", "ram": "8 GB"}, "query_complexity": 4},
+    {"query_id": "H13", "task": "Find a Business laptop", "goal": {"price": "under $2000", "weight": "under 1.5 kg"}, "query_complexity": 4},
+    {"query_id": "H14", "task": "Find a Laptop", "goal": {"cpu": "AMD Ryzen 5", "gpu": "GTX 1650", "battery": "over 7 hrs"}, "query_complexity": 4},
+    {"query_id": "H15", "task": "Find a Gaming Laptop", "goal": {"screen": ["13.3\"", "14\""], "ram": "32 GB"}, "query_complexity": 4},
+    {"query_id": "H16", "task": "Find a Laptop", "goal": {"brand": "Acer", "cpu": "Intel i7", "storage": "1 TB"}, "query_complexity": 4},
+    {"query_id": "H17", "task": "Find a Laptop", "goal": {"use_case": "multitasking", "ram": "32 GB", "cpu": "good CPU"}, "query_complexity": 5},
+    {"query_id": "H18", "task": "Find a Gaming Laptop", "goal": {"gpu": "NVIDIA RTX", "price": "under $2500"}, "query_complexity": 4},
+    {"query_id": "H19", "task": "Find a 2-in-1 Laptop", "goal": {"features": "convertible", "ssd": "512 GB"}, "query_complexity": 4},
+    {"query_id": "H20", "task": "Find a Laptop", "goal": {"release_date": "within last year", "battery": "over 10 hrs"}, "query_complexity": 5},
+    {
+        "query_id": "M1",
+        "task": "Find a Student Laptop",
+        "goal": { "battery": "at least 10 hrs", "price": "under $2000" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M2",
+        "task": "Find a 2-in-1 Laptop",
+        "goal": { "screen": "between 13\" and 14\"" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M3",
+        "task": "Find a Gaming Laptop",
+        "goal": { "gpu": "GTX 1650" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M4",
+        "task": "Find a Business Laptop",
+        "goal": { "brand": "Dell" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M5",
+        "task": "Find a Laptop",
+        "goal": { "weight": "under 1.2 kg" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M6",
+        "task": "Find a Laptop",
+        "goal": { "cpu": "Intel i7" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M7",
+        "task": "Find a Laptop",
+        "goal": { "ram": "32 GB" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M8",
+        "task": "Find a Gaming Laptop",
+        "goal": { "price": "under $1500" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M9",
+        "task": "Find a Student Laptop",
+        "goal": { "weight": "under 1.5 kg" },
+        "query_complexity": 3
+      },
+      {
+        "query_id": "M10",
+        "task": "Find a 2-in-1 Laptop",
+        "goal": { "battery": "over 8 hrs" },
+        "query_complexity": 3
+      }
 ]
 

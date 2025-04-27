@@ -1,10 +1,17 @@
 import time
 import json
+import datetime
+import sys
 from agent.agent import run_agent
 from scraper.page_loader import close_driver
 from search_algorithms.dfs import DepthFirstSearch
 from search_algorithms.bfs import BreadthFirstSearch
 from search_algorithms.astar import AStarSearch
+
+# Redirect stdout and stderr to a file
+logfile = open('entire_logs.txt', 'w')
+sys.stdout = logfile
+sys.stderr = logfile
 
 # sample simulation data
 # task = "find a high performance laptop"
@@ -15,27 +22,17 @@ from search_algorithms.astar import AStarSearch
 # search_engine = BreadthFirstSearch
 # search_engine = AStarSearch
 
+# Load queries from agent_queries.json
+with open('simulation_queries.json', 'r') as f:
+    queries = json.load(f)
 
-queries = [
-    {
-    "query_id": "H21",
-    "task": "Find a 2-in-1 Laptop",
-    "goal": {
-        "screen": "between 13\" and 14\""
-    },
-    "query_complexity": 3
-    }
-]
-
-# # Load queries from agent_queries.json
-# with open('complex_queries.json', 'r') as f:
-#     queries = json.load(f)
-
-max_search_steps = 20
+max_search_steps = 50
 algorithms =[DepthFirstSearch, BreadthFirstSearch, AStarSearch]
 
 for query in queries:
+    print("This is query: ", query["query_id"])
     for search_engine in algorithms:
+        print("This is search engine: ", search_engine.__name__)
         result = run_agent(
             task=query["task"],
             goal=query["goal"],

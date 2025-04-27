@@ -15,23 +15,34 @@ def goal_checker(elements, constraints):
                 return False
 
             if key == "screen" and "screen" in el_text:
-                if any(check_range(screen.split('"')[0], expected) for screen in el_text.split()):
-                    result[key] = True
-                    found[key] = el_text
+                try:
+                    # Try extracting the first number (e.g., 13.3" Screen)
+                    screen_val = float(el_text.split('"')[0])
+                    if check_range(str(screen_val), expected):
+                        result[key] = True
+                        found[key] = el_text
+                except ValueError:
+                    continue
 
             elif key == "battery" and "battery" in el_text:
-                battery_hours = float(el_text.split()[0])
-                if 'at least' in expected:
-                    threshold = float(expected.replace('at least', '').split()[0])
-                    result[key] = battery_hours >= threshold
-                    found[key] = el_text
+                try:
+                    battery_hours = float(el_text.split()[0])
+                    if 'at least' in expected:
+                        threshold = float(expected.replace('at least', '').split()[0])
+                        result[key] = battery_hours >= threshold
+                        found[key] = el_text
+                except ValueError:
+                    continue
 
             elif key == "price" and "product-price" in el_text:
-                price = float(el_text.replace("$", "").replace(",", "").split()[0])
-                if 'under' in expected:
-                    threshold = float(expected.replace('under', '').replace('$', ''))
-                    result[key] = price < threshold
-                    found[key] = el_text
+                try:
+                    price = float(el_text.replace("$", "").replace(",", "").split()[0])
+                    if 'under' in expected:
+                        threshold = float(expected.replace('under', '').replace('$', ''))
+                        result[key] = price < threshold
+                        found[key] = el_text
+                except ValueError:
+                    continue
 
     all_constraints_met = all(result.values())
     if all_constraints_met:

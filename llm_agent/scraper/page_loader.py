@@ -28,7 +28,7 @@ def page_loader(path):
         )
         print("✅ Product metadata loaded.")
     except Exception as e:
-        print("⚠️ Warning: Product metadata not loaded in time.", e)
+        print("⚠️ Warning: Product metadata not loaded in time.")
 
     driver.implicitly_wait(3)
     elements = driver.find_elements(By.XPATH, "//*")
